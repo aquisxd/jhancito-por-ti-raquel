@@ -1,0 +1,25 @@
+<table class="table" >
+    <thead class="thead-danger bg-danger">
+      <tr>
+        <th scope="col">imagen_id</th>
+        <th scope="col">titulo imagen</th>
+        <th scope="col">audio imagen</th>
+        <th scope="col">orden imagen</th>
+        <th scope="col">catalogo_id</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let im of list">
+        <td >{{ im.imagen_id }}</td>
+        <td >{{ im_titulo }}</td>
+
+        <td ><img src= "{{ im.audio_imagen }}" alt="Smiley face" height="42" width="42"></td>
+        
+        
+
+        <td >{{ im.orden_imagen }}</td>
+        <td>{{ im.catalogo_id}}</td>
+      </tr>
+    </tbody>
+</table>
